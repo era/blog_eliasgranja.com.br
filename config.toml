@@ -1,0 +1,17 @@
+website_name = "Elias Granja"
+uri = "https://eliasgranja.com.br"
+
+# content folder used by `squid new` and as the default build input
+markdown_folder = "markdown"
+
+# /posts/<slug>/ instead of /posts/<slug>.html
+pretty_urls = true
+
+# syntect theme for fenced code blocks
+code_theme = "InspiredGitHub"
+
+[custom_keys]
+description = "Artigos sobre soberania digital, infraestrutura e política."
+language = "pt-BR"
+author = "Elias Granja"
+contact_email = "contato@eliasgranja.com.br"

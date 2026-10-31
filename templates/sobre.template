@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre — {{ website_name }}</title>
+  <meta name="description" content="Quem escreve e como entrar em contato.">
+  <meta name="author" content="{{ author }}">
+  <link rel="canonical" href="{{ uri }}/sobre/">
+  <link rel="alternate" type="application/rss+xml" title="{{ website_name }}" href="{{ uri }}/rss.xml">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <meta name="theme-color" content="#fcfbf7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121310" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ website_name }}">
+  <meta property="og:title" content="Sobre — {{ website_name }}">
+  <meta property="og:description" content="Quem escreve e como entrar em contato.">
+  <meta property="og:url" content="{{ uri }}/sobre/">
+  <meta property="og:locale" content="pt_BR">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  {{ render('templates/_nav.template') }}
+  <main id="conteudo">
+    <div class="wrap">
+      <article class="article">
+        <header class="article-head">
+          <h1>Sobre</h1>
+        </header>
+        <div class="prose">
+          <p>Sou engenheiro de software. Nasci no Brasil, vivi quase dez anos na Irlanda e moro em Tóquio.</p>
+
+          <p>Trabalho há mais de quinze anos com sistemas distribuídos, nuvem e segurança. Trabalhei na AWS e na Huawei; hoje sou diretor de engenharia de software em uma empresa de segurança.</p>
+
+          <p>Tenho mestrado em Ciência da Computação e passei os últimos anos construindo produtos de segurança e infraestrutura em Rust, além de liderar times de engenharia.</p>
+
+          <h2>Contato</h2>
+
+          <p>Email: <a href="mailto:{{ contact_email }}">{{ contact_email }}</a><br>
+          GitHub: <a href="https://github.com/era">github.com/era</a><br>
+          Site pessoal em inglês: <a href="https://elias.sh">elias.sh</a></p>
+
+          <p>As opiniões publicadas aqui são minhas e não representam meu empregador.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+  {{ render('templates/_footer.template') }}

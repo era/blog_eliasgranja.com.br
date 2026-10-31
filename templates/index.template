@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ website_name }}</title>
+  <meta name="description" content="{{ description }}">
+  <meta name="author" content="{{ author }}">
+  <link rel="canonical" href="{{ uri }}/">
+  <link rel="alternate" type="application/rss+xml" title="{{ website_name }}" href="{{ uri }}/rss.xml">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <meta name="theme-color" content="#fcfbf7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121310" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ website_name }}">
+  <meta property="og:title" content="{{ website_name }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="{{ uri }}/">
+  <meta property="og:locale" content="pt_BR">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  {{ render('templates/_nav.template') }}
+  <main id="conteudo">
+    <div class="wrap">
+      <article class="article">
+        <header class="article-head">
+          <h1>Artigos</h1>
+        </header>
+        {% if posts.size == 0 %}
+        <p class="empty">Nenhum artigo publicado ainda.</p>
+        {% else %}
+        <ol class="post-list">
+          {% for post in posts.items %}
+          <li class="post-item">
+            <time class="post-date" datetime="{{ post.date }}">{{ date_format(post.date, '%d.%m.%Y') }}</time>
+            <div class="post-body">
+              <h2 class="post-title"><a href="{{ post.partial_uri }}">{{ post.title }}</a></h2>
+              <p class="post-excerpt">{{ post.description }}</p>
+            </div>
+          </li>
+          {% end %}
+        </ol>
+        {% end %}
+      </article>
+    </div>
+  </main>
+  {{ render('templates/_footer.template') }}

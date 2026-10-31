@@ -1,0 +1,9 @@
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-name" href="/">Elias Granja</a>
+    <nav class="site-nav" aria-label="Principal">
+      <a href="/sobre/">Sobre</a>
+      <a href="/rss.xml">RSS</a>
+    </nav>
+  </div>
+</header>
