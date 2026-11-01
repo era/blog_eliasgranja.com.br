@@ -3,13 +3,13 @@ title: Nuvem de Governo, Relatório do Tribunal de Contas da União
 date: 2026-11-01
 ---
 
-A Serpro [está](https://www.serpro.gov.br/menu/noticias/noticias-2026/forum-rnp-2026) utilizando a infraestrutura de parceiros como a Huawei e AWS (e do Google) em seus datacenters. Garantindo assim o acesso a software e hardware de grandes empresas mundiais, mas sob o controle nacional. A ideia não é nova, sendo inclusive um dos principais negócios da Huawei com empresas de telecomunicação. Porém, a utilização dos provedores estadunidenses colocam em risco a soberania nacional como [explicado no relatório do Tribunal de Contas da União](https://static.poder360.com.br/uploads/2026/06/Acordao-1380-de-2026-Plenario.pdf) e explicado aqui com a minha opinião técnica, vale ressaltar que a minha opinião deriva tanto do relatório quanto de experiência profissional: um engenheiro de software que trabalhou 4 anos na AWS e 2 anos na Huawei Cloud.
+A Serpro [está](https://www.serpro.gov.br/menu/noticias/noticias-2026/forum-rnp-2026) utilizando a infraestrutura de parceiros como a Huawei e AWS (e do Google) em seus data centers. Garantindo assim o acesso a software e hardware de grandes empresas mundiais, mas sob o controle nacional. A ideia não é nova, sendo inclusive um dos principais negócios da Huawei com empresas de telecomunicação. Porém, a utilização dos provedores estadunidenses coloca em risco a soberania nacional como [explicado no relatório do Tribunal de Contas da União](https://static.poder360.com.br/uploads/2026/06/Acordao-1380-de-2026-Plenario.pdf) e explicado aqui com a minha opinião técnica, vale ressaltar que a minha opinião deriva tanto do relatório quanto de experiência profissional: um engenheiro de software que trabalhou 4 anos na AWS e 2 anos na Huawei Cloud.
 
 Nesse texto tudo que se encontra entre aspas ou como citação são partes do relatório a menos que outra fonte seja atribuída no texto. 
 
 # O que é?
 
-Na AWS esse serviço é nomeado "[AWS Outposts](https://aws.amazon.com/outposts/rack/)", já na Huawei é conhecido como "[Huawei Cloud Stack](https://www.huaweicloud.com/intl/en-us/product/huaweicloudstack.html)". A ideia é basicamente enviar racks com toda a infraestrutura (hardware e software) para ser instalado no data-center do contratante. Seria como uma "mini-região" dessas clouds rodando diretamente no data-center do governo.
+Na AWS esse serviço é nomeado "[AWS Outposts](https://aws.amazon.com/outposts/rack/)", já na Huawei é conhecido como "[Huawei Cloud Stack](https://www.huaweicloud.com/intl/en-us/product/huaweicloudstack.html)". A ideia é basicamente enviar racks com toda a infraestrutura (hardware e software) para ser instalado no data center do contratante. Seria como uma "mini-região" dessas clouds rodando diretamente no data center do governo.
 
 A nuvem da Huawei foi colocada como um risco por governos de diversos países por causa de acusações infundadas do governo estadunidense e por conta disso um dos modelos que a empresa investe há anos é o modelo onde a Huawei é responsável pela entrega do hardware e software integrados e suporte, enquanto que o gerenciamento dela é feito por terceiros.
 
@@ -37,7 +37,7 @@ provedor
 
 ## Custos
 
-Aproximadamente 1,1 bilhão de reais será investido, dentre eles Serpro irá investir R$ 640 milhões entre 2025 e 2032, enquanto a Dataprev estimou investimentos de cerca de R$ 480 milhões no período de cinco anos.
+Aproximadamente 1,1 bilhão de reais será investido, dentre eles, o Serpro irá investir R$ 640 milhões entre 2025 e 2032, enquanto a Dataprev estimou investimentos de cerca de R$ 480 milhões no período de cinco anos.
 
 # Soberania Digital
 
@@ -60,7 +60,7 @@ O contrato com a AWS é ainda pior: "Especificamente nos contratos associados à
 
 # Aspectos técnicos
 
-Como muito bem identificado pelo Tribunal de Contas da União. Os grandes provedores de nuvem públicas oferecem múltiplas Availability Zones (AZ) e regiões. Essa redundância geográfica garantem high-availability em casos como desastres naturais, falhas de energia, ataques cibernéticos. Além de reduzir os riscos de perda de dados em caso falhas no data-center. A Portaria SGD/MGI 5.950/2023 obriga os provedores de nuvem a possuir, no mínimo, dois data centers em território brasileiro, capaz de ofertar serviços padronizados e altamente automatizados, nos quais os recursos de infraestrutura (por exemplo, computação, rede e armazenamento) são complementados por serviços de plataforma integrados, e deve cumprir os requisitos de segurança da informação. Porém o relatório aponta pela falta dessa redundância: "as soluções da AWS, da Huawei e do Google encontram-se disponíveis exclusivamente no data center de Brasília".
+Como muito bem identificado pelo Tribunal de Contas da União. Os grandes provedores de nuvem pública oferecem múltiplas Zonas de Disponibilidade (AZ) e regiões. Essa redundância geográfica garante alta disponibilidade em casos como desastres naturais, falhas de energia, ataques cibernéticos. Além de reduzir os riscos de perda de dados em caso de falhas no data center. A Portaria SGD/MGI 5.950/2023 obriga os provedores de nuvem a possuir, no mínimo, dois data centers em território brasileiro, capaz de ofertar serviços padronizados e altamente automatizados, nos quais os recursos de infraestrutura (por exemplo, computação, rede e armazenamento) são complementados por serviços de plataforma integrados, e deve cumprir os requisitos de segurança da informação. Porém o relatório aponta a falta dessa redundância: "as soluções da AWS, da Huawei e do Google encontram-se disponíveis exclusivamente no data center de Brasília".
 
 "É importante ressaltar que tal risco não decorre da inexistência de múltiplos data centers pelas empresas públicas responsáveis pela operação da nuvem de governo, mas da ausência de disponibilização efetiva de redundância geográfica de parte das soluções de computação em nuvem ofertadas aos órgãos e entidades."
 
