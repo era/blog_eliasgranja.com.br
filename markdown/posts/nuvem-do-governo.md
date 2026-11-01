@@ -37,7 +37,7 @@ Aproximadamente R$ 1,1 bilhão será investido: o Serpro investirá R$ 640 milh�
 
 # Soberania Digital
 
-Do ponto de vista da soberania, esse tipo de serviço é extremamente importante, mas não o suficiente. Ele reduz o risco de que governos estrangeiros acessem os dados dos brasileiros, mas não o elimina como mostra a cláusula da AWS citada adiante. Porém, na minha avaliação, é uma solução de curto prazo: o governo ainda fica refém da empresa de nuvem, ainda precisa pagar a empresa e não desenvolve soluções nacionais. Decisões do fornecedor podem afetar a operação do ambiente local; em outras palavras, a empresa pode vir a cortar o serviço.
+Do ponto de vista da soberania, esse tipo de serviço é extremamente importante, mas não o suficiente. Ele reduz o risco de que governos estrangeiros acessem os dados dos brasileiros, mas não o elimina como mostra a cláusula da AWS citada adiante. Porém, na minha avaliação, é uma solução de curto prazo: o governo ainda fica refém da empresa de nuvem, ainda precisa pagar a empresa e não desenvolve soluções nacionais.
 
 A Portaria SGD/MGI 5.950/2023, que prevê a implementação da nuvem do governo, é clara quanto aos seus objetivos: (1) aumentar o nível de segurança e a privacidade dos dados dos cidadãos; (2) assegurar a autonomia tecnológica nacional; e (3) cumprir a Lei Geral de Proteção de Dados (LGPD). 
 
