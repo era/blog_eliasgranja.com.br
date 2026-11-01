@@ -11,8 +11,8 @@
   --accent: #14532d;
   --code: #f2f0e9;
 
-  --measure: 42rem;
-  --wide: 52rem;
+  --measure: 46rem;
+  --wide: 56rem;
 
   --serif: "Iowan Old Style", "Sitka Text", Charter, "Bitstream Charter", Georgia, Cambria, ui-serif, serif;
   --sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI Variable Text", "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
@@ -293,7 +293,7 @@ a:focus-visible {
 }
 
 .prose {
-  font-size: 1.125rem;
+  font-size: 1.1875rem;
   overflow-wrap: break-word;
 }
 
