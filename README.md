@@ -15,6 +15,7 @@ config.toml          configuração do site (nome, URL, idioma, descrição)
 markdown/posts/      artigos em Markdown com frontmatter YAML
 templates/           páginas e parciais em TinyLang
 static/              CSS, favicon, robots.txt e a página 404
+.github/workflows/   publicação no GitHub Pages
 output/              site gerado (não edite à mão)
 ```
 
@@ -53,10 +54,26 @@ excerpt: "Uma frase que apareça na listagem e no feed RSS."
 
 ## Publicação
 
-`make build` gera o site completo em `output/`. Envie o conteúdo dessa pasta
-para qualquer hospedagem estática. A configuração de URLs bonitas
+`make build` gera o site completo em `output/`. A configuração de URLs bonitas
 (`pretty_urls = true`) produz caminhos como `/posts/meu-artigo/`; o servidor
 precisa servir `index.html` dentro dessas pastas. A página de erro está em
-`404.html`, na raiz de `output/`.
+`404.html`, na raiz de `output/`. O Squid também gera `rss.xml` e `sitemap.xml`.
 
-O Squid também gera `rss.xml` e `sitemap.xml` automaticamente.
+O GitHub Pages é atualizado pelo workflow `.github/workflows/pages.yml` a cada
+push na `master` (ou manualmente em *Actions → Publicar no GitHub Pages → Run
+workflow*). Ele instala o `squid` a partir do repositório de origem, fixado num
+commit, roda `make build` e publica o conteúdo de `output/`.
+
+Configuração única, em *Settings → Pages*:
+
+- **Source**: *GitHub Actions*.
+- **Custom domain**: `eliasgranja.com.br`, com o DNS apontando para o Pages —
+  registros `A` no apex (`185.199.108.153`, `185.199.109.153`,
+  `185.199.110.153`, `185.199.111.153`) e `CNAME` de `www` para
+  `era.github.io`.
+
+Os templates usam caminhos absolutos na raiz (`/style.css`, `/posts/...`) e o
+`uri` do `config.toml` é `https://eliasgranja.com.br`, então o site precisa ser
+servido na raiz do domínio. No endereço padrão
+`era.github.io/blog_eliasgranja.com.br/` o CSS e os links quebrariam; para usar
+esse endereço, os caminhos dos templates e o `uri` precisam virar relativos.

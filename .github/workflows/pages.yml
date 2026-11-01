@@ -1,0 +1,58 @@
+name: Publicar no GitHub Pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      # falha cedo, com mensagem clara, se o Pages ainda não estiver habilitado
+      - uses: actions/configure-pages@v6
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      # o squid não é publicado no crates.io: instalamos do fonte, fixado num commit
+      - name: Instalar o squid
+        run: >-
+          cargo install
+          --git https://github.com/cats-of-the-world/squid
+          --rev fd8a595cb4ce9d8bd8ea0584160c4af751a162a2
+          --locked
+
+      - name: Gerar o site
+        run: make build
+
+      - name: Verificar a saída
+        run: |
+          for file in index.html 404.html style.css rss.xml sitemap.xml; do
+            test -f "output/$file" || { echo "faltando: output/$file"; exit 1; }
+          done
+
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: output
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publicar
+        id: deployment
+        uses: actions/deploy-pages@v5
