@@ -9,11 +9,11 @@ Nesse texto tudo que se encontra entre aspas ou como citação são partes do re
 
 # O que é?
 
-Na AWS esse serviço é nomeado "[AWS Outposts](https://aws.amazon.com/outposts/rack/)", já na Huawei é conhecido como "[Huawei Cloud Stack](https://www.huaweicloud.com/intl/en-us/product/huaweicloudstack.html)". A ideia é basicamente enviar racks com toda a infraestrutura (hardware e software) para ser instalado no data center do contratante. Seria como uma "mini-região" dessas clouds rodando diretamente no data center do governo.
+Na AWS esse serviço é nomeado "[AWS Outposts](https://aws.amazon.com/outposts/rack/)", já na Huawei é conhecido como "[Huawei Cloud Stack](https://www.huaweicloud.com/intl/en-us/product/huaweicloudstack.html)". A ideia é basicamente enviar racks com toda a infraestrutura (hardware e software) para ser instalado no data center do contratante. Seria como uma "extensão da região" dessas clouds rodando diretamente no data center do governo.
 
 A nuvem da Huawei foi colocada como um risco por governos de diversos países por causa de acusações infundadas do governo estadunidense e por conta disso um dos modelos que a empresa investe há anos é o modelo onde a Huawei é responsável pela entrega do hardware e software integrados e suporte, enquanto que o gerenciamento dela é feito por terceiros.
 
-O [governo](https://static.poder360.com.br/uploads/2026/06/Acordao-1380-de-2026-Plenario.pdf) define os modelos de implementação da computação em nuvem em: pública (infraestrutura compartilhada, disponibilizados a qualquer pessoa ou organização), privada (infraestrutura dedicada a uma única organização), híbrida (combina elementos de nuvens públicas e privadas) e “nuvem soberana” (ou “nuvem de governo” para organizações públicas), que é projetado para atender às necessidades de setores estratégicos, públicos e privados, buscando segurança, conformidade regulatória e soberania. Esse modelo de nuvem preconiza que as organizações armazenem e processem informações consideradas essenciais dentro de uma infraestrutura que segue normas rígidas de proteção de dados, territorialidade e controle de acesso.
+Para ser ainda mais preciso, o [TCU](https://static.poder360.com.br/uploads/2026/06/Acordao-1380-de-2026-Plenario.pdf) descreve os modelos de implementação da computação em nuvem em: pública (infraestrutura compartilhada, disponibilizados a qualquer pessoa ou organização), privada (infraestrutura dedicada a uma única organização), híbrida (combina elementos de nuvens públicas e privadas) e “nuvem soberana” (ou “nuvem de governo” para organizações públicas), que é projetado para atender às necessidades de setores estratégicos, públicos e privados, buscando segurança, conformidade regulatória e soberania. Esse modelo de nuvem preconiza que as organizações armazenem e processem informações consideradas essenciais dentro de uma infraestrutura que segue normas rígidas de proteção de dados, territorialidade e controle de acesso.
 
 ## Requisitos
 
@@ -47,7 +47,7 @@ A Portaria SGD/MGI 5.950/2023 que prevê a implementação da nuvem do governo �
 
 Utilizando a Huawei Cloud Stack, o governo assegura os objetivos (1) e (3), mas não necessariamente o (2) dado que ainda depende de órgãos estrangeiros.
 
-Não somente isso, mas o próprio relatório do governo deixa claro o risco que existe por conta da necessidade de algumas dessas stacks "ainda que instaladas localmente, dependerem (em algumas situações) de planos de controle (Control Plane), serviços de gestão, monitoramento e telemetria associados a regiões públicas ou estruturas do provedor, exigindo conectividade contínua para funções essenciais de operação".
+Não somente isso, mas o próprio relatório do TCU deixa claro o risco que existe por conta da necessidade de algumas dessas stacks "ainda que instaladas localmente, dependerem (em algumas situações) de planos de controle (Control Plane), serviços de gestão, monitoramento e telemetria associados a regiões públicas ou estruturas do provedor, exigindo conectividade contínua para funções essenciais de operação".
 
 "Nessa configuração, indisponibilidades, restrições técnicas ou decisões do fornecedor podem afetar a operação do ambiente local, sendo que a autonomia do Estado fica condicionada a serviços que, em última instância, respondem à governança corporativa e ao regime jurídico de outro
 país."
