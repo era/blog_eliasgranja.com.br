@@ -21,3 +21,6 @@ Os convênios com universidades também ajudam na formação de estudantes. A [U
 De acordo com o relatório do Tribunal de Contas da União, um dos problemas apontados é a ausência de metas e indicadores. Há relatos de resultados positivos, como o da Unicamp, mas são autodeclarados e não permitem medir o impacto da política. A auditoria hoje é predominantemente orientada à verificação de conformidade: verifica se as empresas investem onde deveriam. Isso parece ser um padrão: o Brasil tem boas ideias e dinheiro sendo investido tanto pelo setor público quanto pelo privado, mas ele é alocado com a lógica de mercado sem necessariamente pensar no que será útil à nação em algumas décadas, principalmente em semicondutores, infraestrutura digital e IA. Não temos, nesse setor, algo tão forte e produtivo quanto a Embrapa é para a agricultura.
 
 O regime atual expira em 2029, e a indústria pressiona o Congresso a derrubar o Veto 27/2024 para estendê-lo até 2073. O benefício é importante, mas antes de ampliar o prazo por mais quatro décadas, precisamos ter certeza de seguir o que o TCU determinou: matriz de riscos, intercâmbio bidirecional de dados entre MCTI e Receita e indicadores com linha de base.
+
+---
+Uso de LLM: O texto foi escrito a mão e revisado pelo DeepSeek V4 Flash.
