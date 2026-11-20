@@ -11,7 +11,7 @@
   --accent: #14532d;
   --code: #f2f0e9;
 
-  --measure: 46rem;
+  --measure: 38rem;
   --wide: 56rem;
 
   --serif: "Iowan Old Style", "Sitka Text", Charter, "Bitstream Charter", Georgia, Cambria, ui-serif, serif;
@@ -262,9 +262,17 @@ a:focus-visible {
 /* Article pages */
 
 .article {
-  max-width: var(--measure);
+  max-width: var(--wide);
   margin: 0 auto;
   padding: clamp(2.5rem, 6vw, 4.5rem) 0 2rem;
+}
+
+/* The reading column shares the left edge of the masthead instead of sitting
+   centered inside the wider wrapper. */
+.article-head,
+.prose,
+.post-nav {
+  max-width: var(--measure);
 }
 
 .article-head {
@@ -293,7 +301,10 @@ a:focus-visible {
 }
 
 .prose {
+  font-family: var(--serif);
   font-size: 1.1875rem;
+  line-height: 1.6;
+  hyphens: auto;
   overflow-wrap: break-word;
 }
 
