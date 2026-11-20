@@ -11,7 +11,7 @@
   --accent: #14532d;
   --code: #f2f0e9;
 
-  --measure: 38rem;
+  --measure: 44rem;
   --wide: 56rem;
 
   --serif: "Iowan Old Style", "Sitka Text", Charter, "Bitstream Charter", Georgia, Cambria, ui-serif, serif;
@@ -306,6 +306,15 @@ a:focus-visible {
   line-height: 1.6;
   hyphens: auto;
   overflow-wrap: break-word;
+}
+
+/* Wider column, same line length: the type grows with the measure so lines
+   stay near 70 characters instead of running past 75. 47rem is where the
+   wrapper content first reaches the full 44rem measure. */
+@media (min-width: 47rem) {
+  .prose {
+    font-size: 1.3125rem;
+  }
 }
 
 /* Zero out the UA margins inside the prose, at no specificity, so that block
