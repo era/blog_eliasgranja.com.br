@@ -31,12 +31,13 @@
         <div class="prose">
           <p>Sou engenheiro de software. Nasci no Brasil, vivi quase dez anos na Irlanda e moro em Tóquio.</p>
 
-          <p>Trabalho há mais de quinze anos com sistemas distribuídos, nuvem e segurança. Trabalhei na AWS e na Huawei; hoje sou diretor de engenharia de software em uma empresa de segurança.</p>
+          <p>Tenho mestrado em Ciência da Computação pela Unicamp, com foco em sistemas distribuídos.</p>
+
+          <p>Trabalho há mais de quinze anos com sistemas distribuídos, nuvem e segurança. Trabalhei na AWS e na Huawei; hoje sou diretor de engenharia de software em <a href="https://www.levelblue.com/">uma empresa de segurança</a>.</p>
 
           <p>Projetos que participei incluem: <a href="https://aws.amazon.com/redshift/">AWS Redshift</a>, <a href="https://www.huaweicloud.com/intl/en-us/product/geminidb.html">
               Huawei's GeminiDB</a>.</p>
 
-          <p>Tenho mestrado em Ciência da Computação pela Unicamp e passei os últimos anos construindo produtos de segurança e infraestrutura em Rust, além de liderar times de engenharia.</p>
 
           <p>Meu foco atual atual é design de sistemas distribuídos, sistemas de segurança digital e métodos formais.</p>
 
